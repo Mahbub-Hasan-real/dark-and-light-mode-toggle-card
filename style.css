@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2a2f30;
+}
+body.light
+{
+    background: rgb(185, 205, 211);
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1140px;
+    height: 100vh;
+    padding: 20px;
+}
+.container .toggle
+{
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle::before
+{
+    content: '\f185';
+    font-family: fontawesome;
+    background: #686d6d;
+    color: rgb(233, 233, 233);
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.light .toggle::before
+{
+    content: '\f186';
+    color: #f1eded;
+    background: rgb(72, 75, 77);
+}
+.container .card
+{
+    position: relative;
+    height: 450px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.8),
+                inset -0px -5px 5px rgba(255, 255, 255, 0.2),
+                inset -10px -10px 20px rgba(255, 255, 255, 0.2),
+                5px 5px 20px rgba(0, 0, 0, 0.8),
+                -5px -5px 20px rgba(255, 255, 255, 0.5);
+}
+body.light .container .card
+{
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3),
+    inset -0px -5px 5px rgba(255, 255, 255, 0.2),
+    inset -10px -10px 20px rgba(255, 255, 255, 0.2),
+    5px 5px 20px rgba(0, 0, 0, 0.3),
+    -5px -5px 20px rgba(255, 255, 255, 0.3);
+}
+.container .card .box
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #66777a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0px);
+    transition: transform .5s;
+    box-shadow: 0px 10px 40px #111;
+    text-align: center;
+}
+body.light .container .card .box
+{
+    background: rgb(177, 209, 218);
+}
+body.light .container .card .box h3,
+body.light .container .card .box h4,
+body.light .container .card .box li
+{
+    color: rgb(10, 129, 123);
+}
+.container .card:hover .box
+{
+    transform: translateY(-50px);
+}
+.container .card .box .icon
+{
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    background: rgb(243, 243, 243);
+    border-radius: 50%;
+}
+.container .card .box .icon i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: lightseagreen;
+}
+.container .card .box h3
+{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #fff;
+    margin: 80px 0px 0px 10px;
+}
+.container .card .box h4
+{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .box ul
+{
+    position: relative;
+}
+.container .card .box ul li
+{
+    list-style: none;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+.container .card .box ul li .fa-check
+{
+    color: greenyellow;
+    margin-right: 5px;
+}
+body.light .container .card .box ul li .fa-check
+{
+    color: rgb(3, 139, 9);
+}
+.container .card .box ul li .fa-times
+{
+    color: #f00;
+    margin-right: 5px;
+}
+body.light .container .card .box ul li .fa-times
+{
+    color: rgb(156, 8, 8);
+}
+.container .card .box a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(243, 243, 243);
+    border-radius: 30px;
+    margin-top: 20px;
+    color: #4e4e4e;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 600;
+}

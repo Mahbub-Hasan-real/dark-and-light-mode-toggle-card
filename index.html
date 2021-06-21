@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbaa4c5194.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle"></div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <div class="icon"><i class="far fa-paper-plane"></i></div>
+                    <h3>basic</h3>
+                    <h4><sup>$</sup>100</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i>10GB space</li>
+                        <li><i class="fas fa-check"></i>3 domain name</li>
+                        <li><i class="fas fa-check"></i>10 email address</li>
+                        <li><i class="fas fa-times"></i>live support</li>
+                    </ul>
+                    <a href="#">order now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <div class="icon"><i class="fas fa-plane-departure"></i></div>
+                    <h3>standerd</h3>
+                    <h4><sup>$</sup>180</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i>250GB space</li>
+                        <li><i class="fas fa-check"></i>10 domain name</li>
+                        <li><i class="fas fa-check"></i>30 email address</li>
+                        <li><i class="fas fa-times"></i>live support</li>
+                    </ul>
+                    <a href="#">order now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <div class="icon"><i class="fas fa-rocket"></i></div>
+                    <h3>premium</h3>
+                    <h4><sup>$</sup>250</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i>50GB space</li>
+                        <li><i class="fas fa-check"></i>100 domain name</li>
+                        <li><i class="fas fa-check"></i>ulimited email address</li>
+                        <li><i class="fas fa-check"></i>live support</li>
+                    </ul>
+                    <a href="#">order now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const body = document.querySelector('body');
+        document.querySelector('.toggle').onclick =function(){
+            body.classList.toggle('light')
+        }
+    </script>
+
+
+
+
+</body>
+</html>
